@@ -12,12 +12,14 @@ function component() {
 	about_content.classList.add("about_content");
 	about_wrapper.classList.add("about_wrapper", "secondary_clr");
 
-	image.src = "restaurant-img.jpg";
+	image.src = "restaurant.jpg";
 	image.alt = "A picture of a busy restaurant";
+	restaurantHeader.innerHTML = "My Restaurant";
 	about_content.innerHTML =
 		"Our restaurant is the best in town! We offer a wide variety of delicious dishes, a welcoming atmosphere, and friendly service. Come visit us and experience the best dining experience around.";
 
 	about_wrapper.append(about_content);
+	image.style.width = "95vw";
 
 	content.append(restaurantHeader, image, about_wrapper);
 
