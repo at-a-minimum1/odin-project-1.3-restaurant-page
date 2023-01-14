@@ -16,15 +16,12 @@ export default function aboutPage() {
 	image.alt = "A picture of a busy restaurant";
 	restaurantHeader.innerHTML = "My Restaurant";
 	about_content.innerHTML =
-		"Our restaurant is the best in town! We offer a wide variety of delicious dishes, a welcoming atmosphere, and friendly service. Come visit us and experience the best dining experience around.";
+		"OUR restaurant is the best in town! We offer a wide variety of delicious dishes, a welcoming atmosphere, and friendly service. Come visit us and experience the best dining experience around.";
 
 	about_wrapper.append(about_content);
 	image.style.width = "95vw";
 
 	content.append(restaurantHeader, image, about_wrapper);
-
-	// Lodash, currently included via a script, is required for this line to work
-	// element.innerHTML = "Hello World";
 
 	return content;
 }
