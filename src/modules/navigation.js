@@ -11,6 +11,7 @@ export default function navigation() {
 	const contact_tab = document.createElement("h2");
 
 	const pageWrapper = document.createElement("div");
+	pageWrapper.innerHTML = "This is a placeholder";
 	pageWrapper.id = "pageWrap";
 
 	about_tab.innerHTML = "About";
@@ -25,7 +26,7 @@ export default function navigation() {
 		if (pageWrapper.innerHTML != "") {
 			pageWrapper.innerHTML = "";
 		}
-		pageWrapper.append(page);
+		pageWrapper.innerHTML = page;
 	}
 
 	nav_bar.append(about_tab, menu_tab, contact_tab, pageWrapper);
