@@ -1,0 +1,31 @@
+/* Utility Classes */
+.primary_clr{
+	background-color: aliceblue;
+}
+.secondary_clr{
+	background-color: antiquewhite;
+}
+.accent_clr{
+	background-color: yellow;
+}
+
+/* Elements */
+p {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* IDs */
+#pageWrap {
+	display: flex;
+	flex-flow: wrap row;
+	align-items: center;
+	justify-content: center;
+	margin: 2rem;
+}
+#navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

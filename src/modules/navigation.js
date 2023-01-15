@@ -4,7 +4,9 @@ import contactPage from "./contact";
 
 export default function navigation() {
 	const content = document.getElementById("content");
+
 	const nav_bar = document.createElement("nav");
+	nav_bar.id = "navigation";
 
 	const about_tab = document.createElement("h2");
 	const menu_tab = document.createElement("h2");
@@ -26,9 +28,10 @@ export default function navigation() {
 		if (pageWrapper.innerHTML != "") {
 			pageWrapper.innerHTML = "";
 		}
-		pageWrapper.innerHTML = page;
+		pageWrapper.insertAdjacentHTML("beforeend", page);
 	}
+	nav_bar.insertAdjacentElement("afterend", pageWrapper);
 
-	nav_bar.append(about_tab, menu_tab, contact_tab, pageWrapper);
-	content.append(nav_bar);
+	nav_bar.append(about_tab, menu_tab, contact_tab);
+	content.append(nav_bar, pageWrapper);
 }
