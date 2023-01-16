@@ -1,6 +1,5 @@
 export default function aboutPage() {
 	return `
-		<h1>My Restaurant</h1>
 		<img src="restaurant.jpg" alt="A picture of a busy restaurant" />
 		<style>
 			img { width: 95vw;

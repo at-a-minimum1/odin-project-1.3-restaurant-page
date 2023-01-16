@@ -1,31 +1,46 @@
-/* Utility Classes */
-.primary_clr{
-	background-color: aliceblue;
-}
-.secondary_clr{
-	background-color: antiquewhite;
-}
-.accent_clr{
-	background-color: yellow;
-}
-
 /* Elements */
 p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+h2 {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	border: dotted 1px;
+	cursor: pointer;
+}
+h2:hover {
+	background-color: lightblue;
+}
+ul {
+	display: grid;
+	grid-template-columns: 1fr, 3;
+}
 
 /* IDs */
 #pageWrap {
 	display: flex;
-	flex-flow: wrap row;
+	flex-flow: wrap column;
 	align-items: center;
 	justify-content: center;
-	margin: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
 }
 #navigation {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* Classes */
+.food_section {
+	display: flex;
+	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 }
